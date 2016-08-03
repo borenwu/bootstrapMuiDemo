@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/ripples.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="material-icons">place</i>
+                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                       aria-controls="collapseExample2">
+                        老北京
+                    </a>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <table id="tableExample" class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>流水号</th>
+                            <th>文件名</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-center">201608021549</td>
+                            <td>灌篮高手</td>
+                            <td>未完成</td>
+                            <!--<td rowspan=$row_host1 style='vertical-align: middle;'>host1</td>-->
+                            <!--<td rowspan=$rowspan style='vertical-align: middle;text-align: center;'>hello</td>-->
+                            <td>
+
+                                <button  class="btn btn-raised btn-primary">完成</button>
+
+
+                                <button  class="btn btn-primary">删除</button>
+
+
+                                <button  class="btn btn-primary" data-toggle="modal" data-target="#billModal">任务明细</button>
+
+
+                                <button  class="btn btn-primary" data-toggle="modal" data-target="#recordModal">领料</button>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="card-panel">
+                <i class="material-icons">place</i>
+                <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false"
+                   aria-controls="collapseExample2">
+                    六步郎
+                </a>
+            </div>
+
+            <div class="collapse" id="collapseExample2">
+                <div class="well">
+                    456
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+
+<!-- billModal -->
+<div class="modal fade" id="billModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="billModalLabel">任务明细</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- recordModal -->
+<div class="modal fade" id="recordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="recordModalLabel">领料窗口</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/lib/jquery-2.1.1.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/material.min.js"></script>
+<script src="js/lib/ripples.min.js"></script>
+<!--<script src="js/lib/jquery.dataTables.min.js"></script>-->
+<!--<script src="js/lib/dataTables.bootstrap.min.js"></script>-->
+<script src="js/user/init.js"></script>
+</body>
+</html>
